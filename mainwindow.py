@@ -15,7 +15,7 @@ class GithubInfobar(object):
     
 
      @classmethod
-     def github_followers():
+     def github_Followers():
          pass
         
 
