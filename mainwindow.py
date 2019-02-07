@@ -1,29 +1,15 @@
-from github import Github
+
 import PyGtk
 
 class GithubInfobar(object):
       
-      access_Token =  "  "
-      
-      @classmethod
-      def github_Repo():
-          pass
-    
-     @classmethod
-     def github_Stars():
-         pass
-    
-
-     @classmethod
-     def github_Followers():
-         pass
-        
+     def __init__(self):
+         self.Github_Info = GithubInformation()
 
 
-    
-    
-    def create_Main_window(self):
+    def create_Window(self):
         pass
+
 
     
 
