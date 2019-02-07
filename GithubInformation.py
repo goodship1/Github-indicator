@@ -8,20 +8,28 @@ class GithubInformation(object):
 	 user = git.get_user("goodship1")
 	 
 	 @classmethod
-	 def get_Repos(cls):
+	 def get_Public_repository(cls):
 		 '''Only gets public repos of user'''
 		 repo_Counter = 0
-		 repo = sum([repo_Counter+1 for repos in cls.user.get_repos()])
-		 return repo
+		 repository = sum([repo_Counter+1 for repos in cls.user.get_repos()])
+		 return repository
+    
      
-	 
+    
 	 @classmethod
 	 def get_Stars(cls):
-		 pass
-	 
+		star_Counter = 0
+		stars = sum([star_Counter+1 for star in cls.user.get_starred()]) 
+		return stars
+		
+		
+		
 	 @classmethod
 	 def get_Followers(cls):
-		 pass
+		 follower_Count = 0
+		 followers = sum([follower_Count+1 for follow in cls.user.get_followers()])
+		 return followers
+
     
    
 
