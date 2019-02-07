@@ -1,16 +1,33 @@
 from github import Github
 import PyGtk
 
-class UbuntuInfobar(object):
+class GithubInfobar(object):
+      
+      access_Token =  "  "
+      
+      @classmethod
+      def github_Repo():
+          pass
+    
+     @classmethod
+     def github_Stars():
+         pass
     
 
-      
-     def get_Github_information(self):
-         github = Github(access_Token)
-         
+     @classmethod
+     def github_followers():
+         pass
+        
+
+
     
     
     def create_Main_window(self):
         pass
 
     
+
+if __name__ == "__main__":
+    Github_Information = GithubInfobar()
+
+
