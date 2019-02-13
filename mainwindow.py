@@ -19,6 +19,9 @@ class GithubInfobar(object):
 		    self.public_Repositories  = self.repositories
 		    self.total_Stars = self.stars
 		    self.total_Followers = self.followers
+		    self.indicator.set_label(self.public_Repositories,"Repos")
+		    self.indicator.set_label(self.total_Stars,"Stars)
+		    self.indicator.set_label(self.total_Followers,"Followers")
 			 
 		 
 		
@@ -56,5 +59,8 @@ class GithubInfobar(object):
 
 
 
-Git = GithubInfobar()
+if __name__ == "__main__:					     
+    Git = GithubInfobar()
+    Githubinfobar.main()
+					     
 
