@@ -16,13 +16,11 @@ class GithubInfobar(object):
 		    self.indicator = appindicator.Indicator.new("githubapplication" , os.path.dirname(os.path.realpath(__file__))+'/image/github.jpg',appindicator.IndicatorCategory.APPLICATION_STATUS)
 		    self.indicator.set_status(appindicator.IndicatorStatus.ACTIVE)
 		    self.indicator.set_menu(gtk.Menu())
-		    self.public_Repositories  = self.repositories
-		    self.total_Stars = self.stars
-		    self.total_Followers = self.followers
-		    self.indicator.set_label(self.public_Repositories,"Repos")
-		    self.indicator.set_label(self.total_Stars,"Stars)
-		    self.indicator.set_label(self.total_Followers,"Followers")
-			 
+		    self.public_repo = self.repositories
+		    self.total_stars = self.stars
+		    self.total_followers = self.followers
+		    self.indicator.set_label("repositories %s  stars %s  followers %s "%(self.repositories,self.total_stars,self.total_followers),"number of public repos")
+		    
 		 
 		
 		
@@ -32,6 +30,9 @@ class GithubInfobar(object):
 			stars = git.get_Stars()
 			followers = git.get_Followers()
 			return (repos,stars,followers)
+		
+		
+		
 		
 		@property
 		def repositories(self):
@@ -52,6 +53,7 @@ class GithubInfobar(object):
 		
 		@staticmethod
 		def main():
+			git = GithubInfobar()
 			gtk.main()
 	
 	
@@ -59,8 +61,7 @@ class GithubInfobar(object):
 
 
 
-if __name__ == "__main__:					     
-    Git = GithubInfobar()
-    Githubinfobar.main()
+if __name__ == "__main__":					     
+    GithubInfobar.main()
 					     
 
