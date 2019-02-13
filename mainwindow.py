@@ -1,3 +1,5 @@
+
+import signal 
 import gi
 import os
 from GithubInformation import GithubInformation
@@ -19,7 +21,7 @@ class GithubInfobar(object):
 		    self.public_repo = self.repositories
 		    self.total_stars = self.stars
 		    self.total_followers = self.followers
-		    self.indicator.set_label("repositories %s  stars %s  followers %s "%(self.repositories,self.total_stars,self.total_followers),"number of public repos")
+		    self.indicator.set_label(" repositories %s  stars %s  followers %s "%(self.repositories,self.total_stars,self.total_followers),"number of public repos")
 		    
 		 
 		
@@ -54,6 +56,7 @@ class GithubInfobar(object):
 		@staticmethod
 		def main():
 			git = GithubInfobar()
+			signal.signal(signal.SIGINT,signal.SIG_DFL)
 			gtk.main()
 	
 	
