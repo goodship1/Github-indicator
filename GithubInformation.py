@@ -16,7 +16,9 @@ class GithubInformation(object):
     
      
      
-     
+     	@classmethod 
+	def get_Private_repository():
+		pass
     
 	 @classmethod
 	 def get_Stars(cls):
