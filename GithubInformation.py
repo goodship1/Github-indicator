@@ -18,6 +18,7 @@ class GithubInformation(object):
      
      	@classmethod 
 	def get_Private_repository():
+		private_repo = 0
 		pass
     
 	 @classmethod
