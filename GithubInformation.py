@@ -3,7 +3,7 @@ from github import Github
 class GithubInformation(object):
       
     
-	 access_Token = " "#Enter your access Token
+	 access_Token = ""#Enter your access Token
 	 git = Github(access_Token)
 	 user = git.get_user("")#Enter your username for example Goodship1
 	 
