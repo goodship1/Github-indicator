@@ -9,7 +9,7 @@ Github Ubuntu information bar
 
 
 ### Configurations
- 
+- Clone repo 
 - In GithubInformation.py  change line 6  access Token to your access token.
 - In GithubInformation.py change line 7 to your "username"
 
