@@ -10,3 +10,9 @@ Github Ubuntu information bar
 ### Dependencies 
 
 - Run install.sh
+
+
+### To run 
+
+- cd Githubinfobar 
+- python mainwindow.py
