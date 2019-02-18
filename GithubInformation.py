@@ -3,9 +3,9 @@ from github import Github
 class GithubInformation(object):
       
     
-	 access_Token = "b951b9eca1875daa9c3d2d18521d0fb363cbe70e"
+	 access_Token = " "#Enter your access Token
 	 git = Github(access_Token)
-	 user = git.get_user("goodship1")
+	 user = git.get_user("")#Enter your username for example Goodship1
 	 
 	 @classmethod
 	 def get_Public_repository(cls):
@@ -15,11 +15,6 @@ class GithubInformation(object):
 		 return repository
     
      
-     
-     	@classmethod 
-	def get_Private_repository():
-		private_repo = 0
-		pass
     
 	 @classmethod
 	 def get_Stars(cls):
