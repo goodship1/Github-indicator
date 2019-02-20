@@ -21,7 +21,7 @@ class GithubInfobar(object):
 		    self.public_repo = self.repositories
 		    self.total_stars = self.stars
 		    self.total_followers = self.followers
-		    self.indicator.set_label(" repositories %s  stars %s  followers %s "%(self.repositories,self.total_stars,self.total_followers),"number of public repos")
+		    self.indicator.set_label(" Repositories: %s  Stars: %s  Followers: %s "%(self.repositories,self.total_stars,self.total_followers),"number of public repos")
 		    
 		 
 		
