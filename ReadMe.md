@@ -9,10 +9,11 @@ Github Ubuntu information bar
 
 ### Dependencies 
 
-- Run install.sh
+- Pygithub
+- libappindicator3-dev
 
 
 ### To run 
-
+ if Dependencies not installed run install.sh
 - cd Githubinfobar 
 - python mainwindow.py
